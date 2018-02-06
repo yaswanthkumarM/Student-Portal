@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>project demo</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="#.html">STUDENT&nbsp&nbsp
+<span class="logo_colour">REGISTRATION FORM</span></a></h1>
+        </div>
+      </div>
+
+    </header>
+    <div id="site_content">
+    <html>
+<head>
+<title></title>
+</head>
+<body>
+<center>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm()
+{
+var a=document.forms["myForm"]["fname"].value;
+if (a==null || a=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+ if(a.length<6)
+  {
+   alert("name should more than 6 characters");
+   return false;
+  }
+  var b=document.forms["myForm"]["pwd"].value;
+  if (b==null || b=="")
+  {
+  alert("password must be filled out");
+  return false;
+  }
+  if(b.length<6)
+  {
+   alert("password should more than 6 characters");
+   return false;
+  }
+  var x=document.forms["myForm"]["email"].value;
+  if (x==null || x=="")
+  {
+  alert("Emailid must be filled out");
+  return false;
+  }
+  var atpos=x.indexOf("@");
+  var dotpos=x.lastIndexOf(".");
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+  var c=document.forms["myForm"]["phone"].value;
+  if (c==null || c=="")
+  {
+  alert("Phone number must be filled out");
+  return false;
+  }
+  if(c.length<10 || c.length>10)
+  {
+   alert("Phone numeber should contain 10 numbers");
+   return false;
+  }
+  alert("registration successfull")
+  return true;
+}
+</script>
+</head>
+<body bgcolor="violet"><br><br><br>
+<form name="myform" action="register.php" onsubmit="return validateForm();" method="post">
+<center>
+<h2>Welcome to Registration Form</h2>
+<h1>
+<table width="512">
+<tr>
+<td>Name:</td>
+<td><input type="text" name="user" size="18"/></td>
+<td>minimum 6 letters</td>
+</tr>
+<tr>
+<td>password</td>
+<td><input type="password" name="pwd" size="18"/></td>
+<td>minimum 6 letters</td>
+</tr>
+<tr>
+<td>email_id:</td>
+<td><input type="text" name="mail" size="18"/></td>
+<td>eg:abc123@mail.com</td>
+</tr>
+<tr>
+<td>phone no:</td>
+<td><input type="text" name="phno" size="18"/></td>
+<td>should be 10 digits</td>
+</tr>
+<tr>
+<td>gender:</td>
+<td>male<input type="radio" name="r1" value="male">
+Female<input type="radio"name="r1" value="female"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="Submit">
+<input type="reset"  value="reset"></td>
+</tr>
+</table>
+</h1>
+</form>
+</center>
+
+</body>
+</html>   
+ <div id="sidebar_container">
+      
+        </div>
+      </div>
+      <div class="content">
+   </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; aditya diploma student information|2012-2015 batch</p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
